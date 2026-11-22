@@ -44,3 +44,4 @@ g++ -std=c++11 example.cpp -lcrypto -o example
 - Optional nonce protection modes are provided beyond the Noise specification, with a 64-message replay window enabled by default.
 - Half-duplex mode can result in catastrophic nonce reuse if both peers transmit simultaneously. Your application protocol must define the initial sender and enforce strict alternation between sending and receiving.
 - Consult the [Noise Protocol (revision 34)](https://noiseprotocol.org/noise.html) specification for details.
+- Vectors to verify against are published by the [noise-c](https://github.com/rweather/noise-c), [cacophony](https://github.com/haskell-cryptography/cacophony), and [snow](https://github.com/mcginty/snow) projects. Due diligence is expected.
